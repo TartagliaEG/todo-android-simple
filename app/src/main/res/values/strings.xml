@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TodoList</string>
+    <string name="todo_subject">Subject</string>
+    <string name="new_todo">New TODO</string>
+</resources>

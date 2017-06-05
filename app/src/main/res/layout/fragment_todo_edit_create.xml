@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/todo_subject_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="TextLabel"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/todo_edt_subject"
+                style="@style/FormInputs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/todo_subject"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/todo_chk_done"
+            style="@style/FormInputs"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TODO done"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/todo_txt_creation_date"
+            style="@style/FormInputs"
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="test date"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/todo_txt_completion_date"
+            style="@style/FormInputs"
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="test date"/>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/todo_action_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:background="@color/colorPrimary"
+        android:padding="0dp"
+        android:textColor="@color/colorTextSecondary"
+        android:text="CONFIRM"
+        />
+
+</RelativeLayout>
